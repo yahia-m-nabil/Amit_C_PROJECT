@@ -97,7 +97,7 @@ bool SDB_DeletEntry (u32 id){
     }
 student * PREV_TEMP=HEADING;
 TEMP=HEADING;
-while(PREV_TEMP!=NULL)
+while(TEMP!=NULL)
 {
     if(TEMP->Student_ID==id)
     {
@@ -120,10 +120,6 @@ while(PREV_TEMP!=NULL)
 }
  printf("ID WAS NOT FOUND");
     return ERROR_CHECK;
-
-
-
-
 }
 
 
@@ -155,6 +151,8 @@ return ERROR_CHECK;
 
 
 bool SDB_IsIdExist (u32 id){
+
+
 ERROR_CHECK=NOK;
 TEMP=HEADING;
 while(TEMP!=NULL)

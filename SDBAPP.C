@@ -45,9 +45,9 @@ case 5:
     break;
 case 6:
     printf("Please enter the ID you want to remove:");
-     scanf("%d", &id);
+     scanf(" %d", &id);
     function_exec=SDB_DeletEntry(id);
-    printf("\n%d",function_exec );
+    printf("\n%d",function_exec);
     break;
 
 case 7:
@@ -60,7 +60,7 @@ case 7:
         printf("NOT FULL\n");
     }
 break;
-case 8:
+case 0:
     printf("thanks for ur time ^-^");
     exit(0);
 break;
